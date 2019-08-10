@@ -10,11 +10,11 @@ class UserAPI(Resource):
         pass
 
     def put(self, id):
-        print('put')
+        print('put', id)
         pass
 
     def delete(self, id):
-        print('delete')
+        print('delete', id)
         pass
 
 api.add_resource(UserAPI, '/users/<int:id>', endpoint = 'user')
